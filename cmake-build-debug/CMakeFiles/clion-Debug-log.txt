@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /Users/joakimamli/Library/CloudStorage/OneDrive-NTNU/3. Sem/IDATG2102 AlgMet/03_Oppgaver Select CMakeLists.txt
