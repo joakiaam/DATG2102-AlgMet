@@ -144,9 +144,17 @@ public:                      //  Initierer medlemmer vha. default parameter:
    }
 
 
-   void resize(const int nyLengde) {   //  Øker (om mulig) arrayens lengde.
-       //  OPPGAVE:  Lage innmaten .....
-     antall = nyLengde;
+   void resize(const int nyLengde) {
+     //  Øker (om mulig) arrayens lengde.
+     //  OPPGAVE:  Lage innmaten .....
+     if (antall > nyLengde) {
+       T* nyData = new T[nyLengde]; // Lag nytt array
+       for (int i; i <= nyLengde; i++) {
+         nyData[i] = data[i];
+       }
+       delete [] data;
+       data = nyData;
+     } else { antall = nyLengde; }
    }
 
                                          //  Tilsvarer:   vec[pos] = verdi.
